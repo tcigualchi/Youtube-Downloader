@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  color: black;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  background: rgb(196,160,95);
+  background: -moz-linear-gradient(90deg, rgba(196,160,95,1) 0%, rgba(235,171,28,1) 35%, rgba(199,163,73,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(196,160,95,1) 0%, rgba(235,171,28,1) 35%, rgba(199,163,73,1) 100%);
+  background: linear-gradient(90deg, rgba(196,160,95,1) 0%, rgba(235,171,28,1) 35%, rgba(199,163,73,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c4a05f",endColorstr="#c7a349",GradientType=1);
+}
+
+.top-container{
+  height: 40vh;
+}
+
+.bottom-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+#form{
+  width: 600px;
+  height: 40vh;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+#form h1{
+  font-style: italic;
+}
+
+#form input{
+  width: 300px;
+  padding: 14px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border: 1px solid lightgray;
+  font-family: inherit;
+  outline: none;
+  box-shadow: 2px 2px 5px gray;
+}
+
+#form button{
+  padding: 14px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: 1px solid lightgray;
+  background-color: whitesmoke;
+  cursor: pointer;
+  font-family: inherit;
+  box-shadow: 2px 3px 5px gray;
+  transition: 0.3s ease-out;
+}
+
+#form button:hover{
+  color:white;
+  background-color:  rgb(0, 0, 0);
+  border: 1px solid  rgb(0, 0, 0);
+  transform: scale(1.1);
+}
+
+.errors{
+  position: relative;
+  top: 70px;
+  width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 5px;
+  padding: 12px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.success{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  color: black;
+}
+
+#download-btn{
+  width: 300px;
+  height: 50px;
+  color: rgb(255, 255, 255);
+  padding: 12px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  text-decoration: none;
+  font-style: normal;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-family: inherit;
+  border: 1px solid rgb(0, 0, 0);
+  transition: 0.3s ease-out;
+  position: relative;
+  top: 70px;
+  font-size: 20px;
+}
+
+#download-btn:hover{
+  color:rgb(255, 255, 255);
+  background-color:  rgb(0, 0, 0);
+  transform: scale(1.1);
+}
+
+@media(max-width:768px){
+  .bottom-container{
+    width: 90%;
+    margin: auto;
+  }
+
+  #form, .success{
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media(max-width:480px){
+  #form input{
+    width: 50%;
+  }
+}
+
+/*header*/
+
+.header{
+  color: inherit; 
+  text-align: center;
+  align-items: center;
+}
+
+a:hover{
+  color: white;
+}
+
+a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  position: relative;
+  text-align: center;
+  align-items: center;
+}
+
+.icon-wrapper {
+  text-align: center;
+  font-size: 2em;
+  top: 460px;
+  position: relative;
+}
+
+[class^="fab fa-youtube"] {
+  color: black;
+}
+
+[class^="fab fa-youtube"]:hover {
+  color: red;
+}
+
+/* LOGO */
+
+.logo{
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  left: 40px;
+  top: 20px;
+}
+
+.logo:hover{
+  color: white;
+}
+
+/* NOME DA MUSICA */
+
+p{
+  position: relative;
+  top: 67px;
+  font-size: 30px;
+}
