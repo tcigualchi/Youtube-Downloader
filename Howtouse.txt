@@ -1,0 +1,15 @@
+You need account in RAPIDAPI: "https://rapidapi.com/hub".
+  
+With the account created you need find "YouTube MP3 API By ytjar" .
+
+Now register on the app and get the API key.
+  
+Once done, take your api key and place it in an .env file in the program directory, in this way: 
+
+
+.env example:
+
+API_KEY=aaaaaaaaaaaaaaaaaaaaaaaaa
+API_HOST=aaaaaaaaaaaaaaaaaaaaaaaaa
+
+Now you can use the apliccation.
